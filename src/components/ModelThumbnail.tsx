@@ -30,7 +30,8 @@ export function ModelThumbnail({ file, bgColor }: ModelThumbnailProps) {
   if (loading) {
     return (
       <div className="aspect-square flex items-center justify-center bg-muted/10 rounded-lg">
-        <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
+        <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />{" "}
+        {progress}
       </div>
     );
   }
